@@ -1,75 +1,114 @@
-# React + TypeScript + Vite
+# 🌐 NetPulse — Network Device Monitoring Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NetPulse is a modern, responsive network monitoring dashboard built with React and TypeScript. It provides a centralized interface to monitor network devices, visualize traffic activity, track device health, manage alerts, and explore device information.
 
-Currently, two official plugins are available:
+> **Note:** NetPulse currently uses simulated network data for demonstration purposes. It is a frontend monitoring dashboard prototype and does not connect to actual network hardware.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 📊 **Dashboard Overview** — Monitor total devices, online devices, warnings, and offline devices.
+- 📈 **Traffic Analytics** — Visualize simulated network download and upload traffic.
+- 🖥️ **Device Inventory** — View device names, IP addresses, locations, types, and status.
+- 🔍 **Search & Filtering** — Search devices and filter by status.
+- ➕ **Add Devices** — Add devices with input validation and duplicate checking.
+- 🔄 **Status Management** — Update device statuses and generate alerts automatically.
+- 🚨 **Alert Management** — Filter, dismiss, and clear alerts.
+- 📥 **CSV Export** — Export device inventory data.
+- 🌙 **Dark Mode** — Switch between light and dark themes.
+- 💾 **Local Storage** — Persist device data, alerts, and theme preferences.
+- 📱 **Responsive UI** — Adapted for different screen sizes.
+- ⚡ **Live Simulation** — Automatically update simulated traffic data.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- CSS
+- Recharts
+- Lucide React
+- React Router DOM
+- Local Storage API
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📸 Dashboard Preview
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Screenshots will be added here.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
 
+- Node.js
+- npm
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ManasaKundanapally/NetPulse.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd NetPulse
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## 📂 Project Structure
+
+```text
+NetPulse/
+├── public/
+├── src/
+│   ├── App.tsx
+│   ├── App.css
+│   └── ...
+├── index.html
+├── package.json
+├── vite.config.ts
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## 💡 What I Learned
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Building interactive dashboards using React and TypeScript
+- Managing application state and reusable UI components
+- Implementing search, filtering, validation, and CRUD operations
+- Creating data visualizations using Recharts
+- Working with browser Local Storage
+- Implementing dark mode
+- Using Git and GitHub for version control
+- Designing interfaces using Figma
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🔮 Future Improvements
 
-```
+- Integrate real network monitoring data
+- Connect to backend APIs
+- Implement authentication and user roles
+- Add real-time monitoring through WebSockets
+- Expand analytics and reporting functionality
+
+## 👩‍💻 Author
+
+**Manasa Kundanapally**
+
+- GitHub: [ManasaKundanapally](https://github.com/ManasaKundanapally)
+
+---
+
+⭐ If you find this project interesting, feel free to explore the repository!
