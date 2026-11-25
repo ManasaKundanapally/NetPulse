@@ -32,7 +32,9 @@ NetPulse is a modern, responsive network monitoring dashboard built with React a
 
 ## 📸 Dashboard Preview
 
-Screenshots will be added here.
+## 📸 Dashboard Preview
+
+![NetPulse Dashboard](screenshots/dashboard.png)
 
 ## 🚀 Getting Started
 
